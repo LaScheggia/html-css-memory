@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Nerko One', cursive;
+  background-color: rgb(173, 216, 230);
+} 
+
+
+.container{
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+/* header */
+header{
+  width: auto;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 2px 2px rgb(120, 146, 154);
+  margin-bottom: 50px;
+}
+
+.card{
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 1px 1px rgb(120, 146, 154);
+  
+}
+
+
+.cardimage {
+  height: 150px;
+  width: 200px;
+  background-color: rgba(231, 26, 231, 0.178);
+/*   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; */
+ /*  background-image: url(../img/noun_Cruise_Ship_3134824.png);
+  top: 0px; */
+}
+
+.cardname{
+  height: 50px;
+  line-height: 50px;
+  background-color: yellowgreen;
+/*   text-align: center;
+  font-size: 30px;
+  color: orange;
+  top: 150px;
+  left: 35px;
+  text-shadow: 2px 2px rgb(152, 154, 155); */
+}
+
+/* .cardname:hover{
+  color: rgb(255, 0, 149);
+}
+ */
+
+
+
+
+
+
+/* footer */
+footer{
+  width: auto;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  text-shadow: rgba(rgb(0, 0, 0));
+}
