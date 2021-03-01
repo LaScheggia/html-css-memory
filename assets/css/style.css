@@ -8,11 +8,16 @@ body{
   background-color: rgb(173, 216, 230);
 } 
 
-
 .container{
   margin: 0 auto;
   width: 60%;
   text-align: center;
+}
+
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
 }
 
 /* header */
@@ -36,24 +41,56 @@ header{
   margin-left: 15px;
   margin-bottom: 15px;
   box-shadow: 1px 1px 1px 1px rgb(120, 146, 154);
-  display: inline-block;
+  float: left;
 }
 
+
+.backcard {
+  background-image: url(../img/pattern.png);
+  background-repeat: repeat;
+  display: block;
+}
+
+.frontcard{
+  display:none;
+}
+
+.card:hover .frontcard{
+  display: block;
+}
 
 .cardimage{
   height: 150px;
   width: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-image: url(../img/noun_Cruise_Ship_3134824.png);
-  top: 0px;
+}
+
+.cardimage .cruiseship{
+  height: 150px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.cardimage .baloon{
+  height: 150px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.cardimage .tractor{
+  height: 150px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.cardimage .submarine{
+  height: 150px;
+  width: 200px;
+  margin-top: 10px;
 }
 
 .cardname{
   height: 50px;
   line-height: 50px;
-  background-color: yellowgreen;
   text-align: center;
   font-size: 30px;
   color: orange;
