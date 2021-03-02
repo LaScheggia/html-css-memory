@@ -10,8 +10,9 @@ body{
 
 .container{
   margin: 0 auto;
-  width: 60%;
-  text-align: center;
+  width: 65%;
+  margin: auto;
+  max-width: 900px;
 }
 
 .clearfix::after{
@@ -36,7 +37,7 @@ header{
 .row1,
 .row2,
 .row3{
-  align-items: center;
+  text-align: center;
 }
 
 .card{
@@ -48,14 +49,20 @@ header{
   margin-bottom: 15px;
   box-shadow: 1px 1px 1px 1px rgb(120, 146, 154);
   float: left;
+  cursor: pointer;
 }
 
 .frontcard{
   display:none;
+  position: relative;
 }
 
 .card:hover .frontcard{
   display: block;
+}
+
+.card:hover .backcard{
+  display: none;
 }
 
 .cardimage{
@@ -96,6 +103,7 @@ header{
   top: 150px;
   left: 35px;
   text-shadow: 2px 2px rgb(152, 154, 155);
+  margin-bottom: 0px;
 }
 
 .cardname:hover{
@@ -110,10 +118,7 @@ header{
   width: 200px;
   border-radius: 10px;
   display: block;
-}
-
-.backcard:hover{
-  display: none;
+  position: absolute;
 }
 
 /* footer */
